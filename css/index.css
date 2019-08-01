@@ -1,0 +1,11 @@
+#app-layout { background-color: #f8f8f8; }
+
+.footer { background-color: #262626; }
+
+.list-style-type-disc { list-style-type:disc; }
+.list-style-type-circle { list-style-type:circle; }
+.list-style-type-square { list-style-type:square; }
+
+.font-size-87p { font-size: 87.5% }
+
+.cursor-pointer { cursor: pointer; }

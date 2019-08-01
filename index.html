@@ -1,214 +1,189 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-	<title>dMorph for World of Warcraft - Wrath of the Lich King 3.3.5а</title>
-	<meta name="keywords" content="morph, tmorph, dmorph, 3.3.5, 3.3.5a, Lich King, Wrath of the Lich King, dMorph for World of Warcraft, dmorph for Lich King"/>
-	<meta name="description" content="Dmorph it's program for change your appearance for version 3.3.5a 12340rev."/>
+		<title>dMorph for World of Warcraft - Wrath of the Lich King 3.3.5а</title>
+		<meta name="keywords" content="morph, tmorph, dmorph, 3.3.5, 3.3.5a, Lich King, Wrath of the Lich King, dMorph for World of Warcraft, dmorph for Lich King"/>
+		<meta name="description" content="Dmorph it's program for change your appearance for version 3.3.5a 12340rev."/>
 
-	<meta name="yandex-verification" content="9b3a713659c97f49"/>
-	<meta name="google-site-verification" content="2RwrDdEQWEZDXUr3kocCWy3CN6R-oHa08KJlD2uSr1A"/>
+		<meta name="yandex-verification" content="9b3a713659c97f49"/>
+		<meta name="google-site-verification" content="2RwrDdEQWEZDXUr3kocCWy3CN6R-oHa08KJlD2uSr1A"/>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-	<style>
-		body {
-			font-family: 'Lato';
-		}
-		.container {
-			background: #f3f3f3;
-			font-size: 18px;
-		}
-		.row-block {
-			display: inline-block;
-			max-width: 900px;
-			margin: 0 auto;
-		}
-		.jumbotron {
-			background: #3498db;
-			color: #fff;
-		}
-		.col-md-6 {
-			padding: 15px;
-		}
-		.m-b-15 {
-			margin-bottom: 30px;
-		}
-		ol {
-			padding-left: 0px;
-			list-style-type: none; /* Убираем исходные маркеры */
-			counter-reset:  item; /* Обнуляем счетчик списка */
-		}
-		li:before {
-			content: counter(item) ' -- '; /* Добавляем к числам скобку */
-			counter-increment: item; /* Задаём имя счетчика */
-		}
-		pre, .alert-warning {
-			text-align: left;
-			margin-top: 10px;
-			padding-left: 40px;
-		}
-		.alert-warning {
-			font-size: 16px;
-			border: solid 1px #eac475;
-		}
-		.btn {
-			background: #3498db;
-			background-image: linear-gradient(to bottom, #3498db, #2980b9);
-			border-radius: 28px;
-			color: #fff;
-			font-family: Arial, sans-serif;
-			font-size: 20px;
-			padding: 10px 20px 10px 20px;
-			margin: 0 2px 0 2px;
-			text-decoration: none;
-		}
-		.btn:hover {
-			color: #fff;
-			background: #3cb0fd;
-			background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-			text-decoration: none;
-		}
-		.btn:focus {
-			color: #fff;
-		}
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
 
-	</style>
-</head>
-<body id="app-layout" style="background: darkgray;">
-	<div itemscope itemtype="http://schema.org/SoftwareApplication" class="container">
-		<div class="jumbotron  text-center">
-			<h3 itemprop="name">dMorph for World of Warcraft - Wrath of the Lich King 3.3.5а</h3>
-		</div>
-
-		<div class="row m-b-15 text-center">
-			<div class="thumbnail row-block">
-				<div class="col-md-6">
-					<img class="img-responsive img-rounded pull-left" src="img/WoWScrnShot_070117_091617.jpg"/>
-				</div>
-				<div class="col-md-6">
-					Dmorph it's program for change your appearance for version 3.3.5a 12340rev.<br/><br/>
-					Use the chat of the game to enter commands.<br/><br/>
-<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-					
-<span itemprop="name">©DDS (Zdohdds - https://worldofwarcraft.com/ru-ru/character/soulflayer/здохддс)</span></span><br/><br/>
-					WARNING!!!
-					<div itemprop="requirements" class="alert-warning" style="text-align: center; padding-left: 0px;">The game only be run in window mode</div>
+	<body id="app-layout">
+		<!-- Modal Donate -->
+		<div class="modal fade" id="modalDonate" tabindex="-1" role="dialog" aria-labelledby="modalDonate" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header border-bottom-0">
+						<h5>You will help the development of projects</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p class="text-secondary">Note: add the project name to the comment.</p>
+						<ul class="list-unstyled">
+							<li class="mb-2">
+								<a href="https://paypal.me/darksectordds" target="_blanck">
+									<div class="card">
+										<div class="card-body text-center p-0 mb-0">
+											<img src="img/donate/paypal.png" class="img-fluid" style="height: 50px;">
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="https://money.yandex.ru/to/41001667240344" target="_blanck">
+									<div class="card">
+										<div class="card-body text-center p-0 mb-0">
+											<img src="img/donate/yandex_money.png" class="img-fluid" style="height: 50px;">
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="modal-footer border-top-0">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
 				</div>
 			</div>
 		</div>
+		<!-- /Modal Donate -->
 
-		<div class="row m-b-15 text-center">
-			<div class="thumbnail row-block">
-				<div class="col-md-6">
-					To morph into another race (Human, in this case):
-					<pre>.race 1</pre>
-					Race IDs:
-					<pre><ol><li>Human</li><li>Orc</li><li>Dwarf</li><li>NightElf</li><li>Undead</li><li>Tauren</li><li>Gnome</li><li>Troll</li><li>Goblin</li><li>BloodElf</li><li>Draenei</li></ol></pre>
+		<!-- Nav -->
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">Projects</a>
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					Menu<i class="fas fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link" data-toggle="modal" data-target="#modalDonate">Donate</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- /Nav -->
 
-					WARNING!!! for the next race haven't models without gear:<br/>
-					<div class="alert-warning">
-						- Dwarf Female<br/>
-						- NightElf Female<br/>
-						- Draenei Male<br/>
-						- Undead Male<br/>
-						- Undead Female<br/>
-						- Troll Female
+		<!-- Header -->
+		<header class="masthead" style="background-image: url('img/cover.png')">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+				<div class="col-lg-8 col-md-10 mx-auto">
+					<div class="site-heading text-light">
+						<h1>Projects developed by DDS</h1>
+						<span class="subheading">A small blog of my projects</span>
+					</div>
+				</div>
+				</div>
+			</div>
+		</header>
+		<!-- /Header -->
+
+		<!-- Main -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card">
+						<img src="img/dmorph_cover.png" class="card-img-top" alt="cover">
+						<div class="card-body">
+							<h5 class="card-title">dmorph</h5>
+							<p class="card-text">Dmorph it's program for change your appearance for World of Warcraft - Wrath of the Lich King version 3.3.5a 12340rev.</p>
+							<a href="html/dmorph/index.html" class="btn btn-primary">Go to project</a>
+						</div>
 					</div>
 				</div>
 
-				<div class="col-md-6">
-					<img class="img-responsive img-rounded pull-right" src="img/WoWScrnShot_070117_091624.jpg"/>
+				<div class="col-sm-4">
+					<div class="card">
+						<img src="img/pspSecondLifeEngine_cover_disabled.png" class="card-img-top" alt="cover">
+						<div class="card-body bg-light">
+							<h5 class="card-title">pspSecondLifeEngine</h5>
+							<p class="card-text">New C++ game engine optimized for PSP platform.</p>
+							<a href="#" class="btn btn-primary disabled">Go to project</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+		<!-- /Main -->
 
-		<div class="row m-b-15 text-center">
-			<div class="thumbnail row-block">
-				<div class="col-md-6">
-					<img class="img-responsive img-rounded pull-left" src="img/WoWScrnShot_070117_091630.jpg"/>
-				</div>
+		<!-- Footer
+		<footer class="footer pt-4 text-light">
+			<div class="container-fluid text-center text-md-left">
+				<div class="row">
+					<div class="col-md-6 mt-md-0 mt-3">
+						<h5 class="text-uppercase">Footer Content</h5>
+						<p>Here you can use rows and columns to organize your footer content.</p>
+					</div>
+		
+					<hr class="clearfix w-100 d-md-none pb-3">
 
-				<div class="col-md-6">
-					To swap genders after a race morph:
-					<pre>.gender</pre>
-				</div>
-			</div>
-		</div>
+					<div class="col-md-3 mb-md-0 mb-3">
+						<h5 class="text-uppercase">Links</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a href="#!">Link 1</a>
+							</li>
+							<li>
+								<a href="#!">Link 2</a>
+							</li>
+							<li>
+								<a href="#!">Link 3</a>
+							</li>
+							<li>
+								<a href="#!">Link 4</a>
+							</li>
+						</ul>
+	  
+					</div>
 
-		<div class="row m-b-15 text-center">
-			<div class="thumbnail row-block">
-				<div class="col-md-6">
-					To morph an item (where 1 is the Head):
-					<pre>.item 1 2955</pre>
-					inventory slots:
-					<pre><ol>1 -- head
-2 -- neck
-3 -- shoulder
-4 -- shirt
-5 -- chest
-6 -- waist
-7 -- legs
-8 -- feet
-9 -- wrist
-10 -- hands
-15 -- back
-16 -- main hand
-17 -- off hand
-18 -- ranged
-19 -- tabard</ol></pre>
-				</div>
-
-				<div class="col-md-6">
-					<img class="img-responsive img-rounded pull-right" src="img/WoWScrnShot_070117_091639.jpg"/>
-				</div>
-			</div>
-		</div>
-
-		<div class="row m-b-15 text-center">
-			<div class="thumbnail row-block">
-				<div class="col-md-6">
-					<img class="img-responsive img-rounded pull-left" src="img/WoWScrnShot_070117_091700.jpg"/>
-				</div>
-
-				<div class="col-md-6">
-					To morph yourself into the Thrall:
-					<pre>.morph 4527</pre>
+					<div class="col-md-3 mb-md-0 mb-3">
+						<h5 class="text-uppercase">Links</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a href="#!">Link 1</a>
+							</li>
+							<li>
+								<a href="#!">Link 2</a>
+							</li>
+							<li>
+								<a href="#!">Link 3</a>
+							</li>
+							<li>
+								<a href="#!">Link 4</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
+	  
+		<div class="footer-copyright text-center py-3">© 2019 Copyright:
+		  <a href="https://darksectordds.github.io/">darksectordds.github.io</a>
 		</div>
+	  
+		</footer>
+		 -->
 
-		<div class="row m-b-15 text-center">
-			<div class="thumbnail row-block">
-				<div class="col-md-6">
-					To scale yourself:
-					<pre>.scale 0.4</pre>
-					WARNING!!!
-					<div class="alert-warning">For entering floating point numbers use the sign point (use a decimal point, not a decimal comma)</div><br/>
-					Default value 1.0
-				</div>
-
-				<div class="col-md-6">
-					<img class="img-responsive img-rounded pull-right" src="img/WoWScrnShot_070117_091711.jpg"/>
-				</div>
-			</div>
-		</div>
-
-		<div class="row m-b-15 text-center">
-			<div class="thumbnail row-block">
-				<img itemprop="image" class="img-responsive img-rounded pull-center" src="img/WoWScrnShot_070117_091755.jpg"/>
-			</div>
-		</div>
-
-		<div class="row row-block text-center" style="display: block; padding-bottom: 90px;">
-			<div style="padding-bottom: 20px; font-size: 19px;">beta 1.0.3 (May 5th, 2018)</div>
-			<a class="btn btn-lg" rel="noopener noreferrer nofollow" href="https://twitch.streamlabs.com/zdohdds" target="_blank"><span class="glyphicon glyphicon-heart"></span> Donate</a>
-			<a itemprop="downloadUrl" class="btn btn-lg" href="https://github.com/darksectordds/darksectordds.github.io/releases/download/beta1.0.3/dmorph.zip" target="_blank"><span class="glyphicon glyphicon-download-alt"></span> Download</a>
-		</div>
-	</div>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-</body></html>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+		<!-- Custom scripts for this template -->
+		<script src="js/nav.js"></script>
+	</body>
+</html>
